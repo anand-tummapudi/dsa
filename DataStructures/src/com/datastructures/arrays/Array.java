@@ -8,6 +8,7 @@ public class Array {
 		items = new int[size];
 	}
 	
+	
 	public void print() {
 		for (int i=0;i<count;i++) {
 			System.out.println(items[i]);
