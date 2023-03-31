@@ -13,8 +13,8 @@ public class ArrayImpl {
 		
 		System.out.println("Remove ELement");
 		
-		//numbers.remove(2);
-		//numbers.print();
+		numbers.remove(2);
+		numbers.print();
 		
 		System.out.println("Index of an element");
 		int index = numbers.indexOf(40);
