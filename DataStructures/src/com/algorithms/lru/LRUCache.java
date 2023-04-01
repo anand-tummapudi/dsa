@@ -1,7 +1,5 @@
-package com.algorithms;
+package com.algorithms.lru;
 
 public class LRUCache {
-	
-	
 
 }
