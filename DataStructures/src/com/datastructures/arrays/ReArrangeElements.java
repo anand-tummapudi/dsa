@@ -17,26 +17,25 @@ public class ReArrangeElements {
 		
 		int maxIndex = arr.length-1;
 		int minIndex = 0;
+		int max = arr[maxIndex]+1;
 		
 		Arrays.sort(arr);
 		
 		System.out.println("Sorted Array:"+Arrays.toString(arr));
 		
-		int max = arr[maxIndex]+1;
-		
 		for(int i=0;i<arr.length;i++) {
 			if(i%2==0) {
-				arr[i] = arr[i] + (arr[maxIndex]%max)*max;
-				maxIndex--;
+				 arr[i] = arr[i]+ (arr[maxIndex]%max)*max;
+				 maxIndex --;
 			}else {
-				arr[i] = arr[i] + (arr[minIndex]%max)*max;
+				arr[i] = arr[i]+(arr[minIndex]%max)*max;
 				minIndex++;
 			}
 		}
 		
-		System.out.println("InterMediateArraay:"+Arrays.toString(arr));
+		System.out.println("Inter Mediate:"+Arrays.toString(arr));
 		
-		for (int i = 0;i<arr.length;i++) {
+		for(int i=0;i<arr.length;i++) {
 			arr[i] = arr[i]/max;
 		}
 		

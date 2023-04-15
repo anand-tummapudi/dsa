@@ -35,3 +35,7 @@ of C and so on.
 13. Find the Duplicate Number: Given an array of integers nums containing n + 1 integers where each integer is in the range [1, n] inclusive. There is only one duplicate number in nums, return this duplicate number.
 
 14. Given a binary array and Q queries. Every query consists of a number K, the task is to print the number of ones and zeros to the left of the index K.
+
+15. Three Sum
+
+16. Given a sorted array of integers, rearrange the elements in the array in Max Min order
