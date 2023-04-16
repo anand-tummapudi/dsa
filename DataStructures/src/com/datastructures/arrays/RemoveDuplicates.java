@@ -26,7 +26,7 @@ public class RemoveDuplicates {
 				arr[count++] = arr[i];
 			}
 		}
-		
+		System.out.println(count);
 		System.out.println("Array After removing Duplicates:"+Arrays.toString(arr));
 		System.out.println("Array Length:"+arr.length);
 		

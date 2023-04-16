@@ -1,5 +1,7 @@
 package com.datastructures.arrays;
 
+import java.util.Arrays;
+
 public class MeanTwoSortedArrays {
 
 	public static void main(String[] args) {
@@ -26,9 +28,7 @@ public class MeanTwoSortedArrays {
 			mergedArray[k++] = array2[j++];
 		}
 		
-		for (int element=0;element<mergedArray.length;element++) {
-			System.out.print(mergedArray[element]);
-		}
+		Arrays.toString(mergedArray);
 		
 		int mean = 0;
 		if(mergedArray.length%2==0) {
