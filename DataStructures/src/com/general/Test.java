@@ -12,6 +12,7 @@ public class Test {
 		
 		String deck[] = new String[52];
 		
+		System.out.println(Arrays.toString(suit));
 		for(int i=0;i<deck.length;i++) {
 			deck[i] = rank[i%13]+suit[i/13];
 		}
