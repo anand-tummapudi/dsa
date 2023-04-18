@@ -42,4 +42,4 @@ of C and so on.
 
 16. Given a sorted array of integers, rearrange the elements in the array in Max Min order.
 
-17. Binary Sear Tree - Creation and traversals using recursive method as well as iterative model using stack.
+17. Binary Tree - Creation and traversals using recursive method as well as iterative model using stack.
