@@ -31,5 +31,7 @@ of C and so on.
 19. Reverse a string using Stack datastructure.
 20. Second Maximum Value - FInd the second maximum value in an array.
 21. Find Missing Number - Find the missing number in a list of natural numbers.
-22. Implement Binary Tree - Pre Order, Post Order and In Order Traversal
+22. Implement Binary Tree - Pre Order, Post Order and In Order Traversal.
 23. Implement Binary Search Tree - In Order Traversal and Search functionalities.
+24. Implement algorithm to print Fibonacci series in a given range.
+25. Program to remove white spaces in a string.
