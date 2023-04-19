@@ -17,11 +17,13 @@ public class BinaryTree {
 	 }
 	
 	public void generateBinaryTree() {
-		TreeNode first = new TreeNode(1);
+		TreeNode first = new TreeNode(10);
 		TreeNode second = new TreeNode(2);
 		TreeNode third = new TreeNode(3);
 		TreeNode fourth = new TreeNode(4);
 		TreeNode fifth = new TreeNode(5);
+		TreeNode six = new TreeNode(8);
+		TreeNode seven = new TreeNode(19);
 		
 		this.root = first;
 		first.left = second;
@@ -29,6 +31,9 @@ public class BinaryTree {
 		
 		second.left = fourth;
 		second.right = fifth;
+		
+		third.left = six;
+		third.right = seven;
 	}
 	
 	public static void main(String[] args) {
@@ -39,6 +44,10 @@ public class BinaryTree {
 		//b.preOrderIterative(b.root);
 		//b.inOrderTraversal(b.root);
 			b.inOrderIterative(b.root);
+		
+			int max = b.findMaxinBinaryTree(b.root);
+			
+			System.out.println("Maximum value in Tree:"+max);
 	}
 	
 	public void preOrderTraversal(TreeNode root){
@@ -98,6 +107,23 @@ public class BinaryTree {
 				stack.push(temp.left);
 			}
 		}
+	}
+	int result =0;
+	
+	public int findMaxinBinaryTree(TreeNode root) {
+		
+		if(root==null) return Integer.MIN_VALUE;
+		
+		if(root.data>result)
+			result = root.data;
+		
+		int left = findMaxinBinaryTree(root.left);
+		int right = findMaxinBinaryTree(root.right);
+		
+		if(left>result)result = left;
+		if(right>left) result = right;
+		
+	return result;
 	}
 
 }
