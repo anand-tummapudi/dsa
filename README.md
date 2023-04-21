@@ -37,4 +37,7 @@ of C and so on.
 25. Program to remove white spaces in a string.
 26. Binary Search Implementation
 27. Find the insert position of an element in a sorted array.
-28. Sort the elements in an Array using Bubble Sort Algorithm
+28. Sort the elements in an Array using Bubble Sort Algorithm.
+29. Insertion Sort algorithm.
+30. Selection sort algorithm.
+31. Merge two sorted arrays.
