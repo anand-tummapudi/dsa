@@ -40,4 +40,6 @@ of C and so on.
 28. Sort the elements in an Array using Bubble Sort Algorithm.
 29. Insertion Sort algorithm.
 30. Selection sort algorithm.
-31. Merge two sorted arrays.
+31. Merge Sort algorithm.
+32. Dutch National Flag problem - Sort an array of 0s,1s and 2s. 
+33. Find the sqare roots of given array containing negative numbers.

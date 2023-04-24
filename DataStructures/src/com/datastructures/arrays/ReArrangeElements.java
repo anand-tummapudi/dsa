@@ -42,5 +42,22 @@ public class ReArrangeElements {
 		System.out.println("Result:"+Arrays.toString(arr));
 		
 	}
+	
+	public static void maxMin(int []arr) {
+		
+		int max = arr[0];
+		int min = arr[0];
+		
+		int [] result = new int [arr.length];
+		int k = 0;
+		for(int i=0;i<arr.length;i++) {
+			if(arr[i]>max) {
+				max = arr[i];
+			}
+			if(arr[i]<min) {
+				min = arr[i];
+			}
+		}
+	}
 
 }
