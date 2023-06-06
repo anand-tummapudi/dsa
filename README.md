@@ -43,3 +43,5 @@ of C and so on.
 31. Merge Sort algorithm.
 32. Dutch National Flag problem - Sort an array of 0s,1s and 2s. 
 33. Find the sqare roots of given array containing negative numbers.
+34. Reverse words in a string.
+35. Longest substring length.

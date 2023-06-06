@@ -15,7 +15,6 @@ public class SubSequenceProblem {
 			System.out.println("Invalid Sub Sequence");
 		}
 		
-		
 	}
 
 	private static boolean validateSubSequence(String str, String seq) {

@@ -10,13 +10,13 @@ public class FirstNonRepeatingCharacter {
 		
 		String str = "racecars";
 		
-		int index = nonReoeatingChar(str);
+		int index = nonRepeatingChar(str);
 		
 		System.out.println("Non Repeating Character:"+str.charAt(index));
 
 	}
 
-	private static int nonReoeatingChar(String str) {
+	private static int nonRepeatingChar(String str) {
 		int index = -1;
 		//int i = 0;
 		char []charArr = str.toCharArray();
