@@ -4,10 +4,13 @@ public class PalindromString {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		/*
+		 * String s = "A man, a plan, a canal: Panama"; s = s.replaceAll("[^a-zA-Z0-9]",
+		 * ""); System.out.println(s.trim().toLowerCase());
+		 */		
+		String s = "A man, a plan, a canal: Panama";
 		
-		String s = "hello";
-		
-		boolean result = checkPalindrom(s.toLowerCase());
+		boolean result = checkPalindrom(s);
 		
 		if(result) {
 			System.out.println("Palindrom");
@@ -18,16 +21,26 @@ public class PalindromString {
 	}
 
 	private static boolean checkPalindrom(String s) {
-		char charArr[] = s.toCharArray();
-		int start = 0;
-		int end = charArr.length-1;
-		while(start<end) {
-			if(charArr[start]!=charArr[end])
-				return false;
-			start++;
-			end--;
-		}
-		return true;
+        s = s.replaceAll("[^a-zA-Z0-9]","");
+        s = s.replaceAll("\\s","");
+        s = s.toLowerCase();
+        
+        System.out.println(s);
+
+        if(s.trim().equals("")){
+            return true;
+        }
+        char charArr[] = s.toCharArray();
+    int i = 0;
+    int j = charArr.length-1;
+       while(i<j){
+           if(charArr[i]!=charArr[j]){
+               return false;
+           }
+           i++;
+           j--;
+       } 
+       return true;
 	}
 
 }
